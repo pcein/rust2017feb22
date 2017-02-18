@@ -20,7 +20,7 @@ fn is_pangram(s: &str) -> bool {
     let all_alphabets:HashSet<char> = "abcdefghijklmnopqrstuvwxyz".chars().collect();
     let test_sentence:HashSet<char> = s.chars().collect();
 
-    /* Add some code here */
+    all_alphabets.is_subset(&test_sentence)
     
 
 }
@@ -35,5 +35,5 @@ fn main() {
 
     println!("\nAll tests passed!!\n");
    
-    //submit::submit(Question(10), Score(5));
+    //submit::submit(Question(10), Score(10));
 }
