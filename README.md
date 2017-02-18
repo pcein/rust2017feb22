@@ -1,2 +1,4 @@
-# rust2017feb22
-Rust workshop - 2017 Feb 22nd at http://www.ajce.in/
+
+Quiz format suitable for submission to the
+quiz app.
+
