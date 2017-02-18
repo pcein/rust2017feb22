@@ -1,1 +1,1 @@
-all/7.rs
+all/10.rs

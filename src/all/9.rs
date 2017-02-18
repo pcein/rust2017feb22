@@ -16,11 +16,7 @@ use submit::{Question, Score};
 
 fn hamming_distance(s1: &str, s2: &str) -> usize {
 
-    s1.chars()
-    .zip(s2.chars())
-    .filter(|p| p.0 != p.1)
-    .count()
-
+    /* Add code here */
 }
 
 fn main() {
