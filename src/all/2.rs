@@ -25,6 +25,7 @@ fn main() {
     assert_eq!(is_pythagorean_triple(3, 4, 5), true);
     assert_eq!(is_pythagorean_triple(1, 2, 3), false);
     assert_eq!(is_pythagorean_triple(7, 8, 9), false);
-   
+ 
+    println!("\nAll tests passed!!\n");
    // submit::submit(Question(2), Score(5));
 }

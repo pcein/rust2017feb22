@@ -28,6 +28,7 @@ fn main() {
     assert_eq!(greater3(10, 8, 9), 10);
     assert_eq!(greater3(10, 10, 10), 10);
     assert_eq!(greater3(10, 10, 11), 11);
-    
+ 
+    println!("\nAll tests passed!!\n");   
     // submit::submit(Question(4), Score(5));
 }

@@ -28,6 +28,8 @@ fn main() {
     assert_eq!(sum_series(1,1), 1);
     assert_eq!(sum_series(1,2), 3);
     assert_eq!(sum_series(1,5), 15);
-    
+
+    println!("\nAll tests passed!!\n"); 
+   
     //submit::submit(Question(5), Score(5));
 }

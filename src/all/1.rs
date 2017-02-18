@@ -22,6 +22,7 @@ fn main() {
     assert_eq!(sqr(10), 100);
     assert_eq!(sqr(-1), 1);
     assert_eq!(sqr(0), 0);
-   
+ 
+    println!("All tests passed!!");  
     // submit::submit(Question(1), Score(0));
 }

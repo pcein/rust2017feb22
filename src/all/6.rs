@@ -27,7 +27,8 @@ fn main() {
     assert_eq!(factorial(2), 2);
     assert_eq!(factorial(3), 6);
     assert_eq!(factorial(4), 24);
-    
+ 
+    println!("\nAll tests passed!!\n");   
     
     //submit::submit(Question(6), Score(5));
 }

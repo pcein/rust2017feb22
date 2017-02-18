@@ -19,13 +19,7 @@ use submit::{Question, Score};
 // sum = 3 + 5 + 6 + 9 = 23
 fn sum_multiples_till(n: i32, v:Vec<i32>) -> i32 {
 
-    /* add a line here */
-
-    /* Hint: you need to FILTER out all numbers
-     * from 1 .. n which are divisible by ANY
-     * number in v.
-     * You need these 3 functions: filter, any and sum
-     */
+    (2 .. n).filter(|n| v.iter().any(|x| n % x == 0)).sum()
 
 }
 

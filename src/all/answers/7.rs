@@ -16,7 +16,7 @@ use submit::{Question, Score};
 // sum all even numbers from 1 to n-1
 
 fn sum_even_numbers(n: i32) -> i32 {
-    let r = /* add a line here */
+    let r = (1..n).filter(|x| x % 2 == 0).sum();
 
     r
 } 
