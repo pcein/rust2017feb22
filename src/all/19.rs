@@ -13,26 +13,26 @@ use submit::{Question, Score};
 
 /*--------------------------------------------*/
 
-/* Make this program compile and run by adding a
- * single { and a single } to the function below.
- * No other change is allowed.
+/* Make this program compile and run by removing
+ * exactly two characters from the function below.
  */
 
 fn foo() -> i32 {
-    let mut x = 5;
-
-    let y = &mut x;
-
-    let z = &x;
-
-    *z + 1
+    let p: &i32;
+    
+    {
+        let x = 5;
+        p = &x;
+    }
+    
+    *p
 }
 
 fn main() {
 
-    assert_eq!(foo(), 6);
+    assert_eq!(foo(), 5);
 
     println!("\nAll tests passed!!\n");
    
-    //submit::submit(Question(18), Score(2));
+    //submit::submit(Question(19), Score(2));
 }
