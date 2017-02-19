@@ -18,11 +18,11 @@ fn word_count(s: &str) -> HashMap<&str, i32> {
 
     let mut h = HashMap::new();
 
-    for /*add some code here*/ {
+    for word in s.split_whitespace() {
         *h.entry(word).or_insert(0) += 1;
     }
 
-    /* add some code here */
+    h
 
 }
 
