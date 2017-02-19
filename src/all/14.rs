@@ -35,10 +35,10 @@ use Button::*;
 
 fn next_floor(curr_floor: Floor, btn: Button) -> Floor {
     match (curr_floor, btn) {
-        (Ground, Up)   => First,
-        (Ground, Down) => Ground,
-        (First, Up)    => First,
-        (First, Down)  => Ground,
+        /* add code */   => First,
+        /* add code */   => Ground,
+        /* add code */   => First,
+        /* add code */   => Ground,
     }
 }
 
