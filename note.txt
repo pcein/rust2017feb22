@@ -21,7 +21,10 @@ quiz 11 - example 30
 
 quiz 12 - example 31 to 33
 
-quiz 13 - example 34 to 37
+quiz 13,14 - example 34 to 37
+
+quiz 15 - examples 38, 39
+
 
 
 
