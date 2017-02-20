@@ -1,1 +1,1 @@
-all/19.rs
+all/1.rs

@@ -1,0 +1,449 @@
+\documentclass{beamer}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usetheme{Warsaw}
+\title{The Rust Programming Language}
+\author{Pramode C.E}
+\institute {
+  \texttt{http://pramode.net}
+}
+
+\begin{document}
+
+%-----------------------
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+%---------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.2]{pics/mob1.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pics/mri.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pics/jetliner.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.2]{pics/pacemaker.png}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pics/bulb.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics{pics/iot.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.8]{pics/car.png}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pics/wifi.png}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.3]{pics/lego.png}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.3]{pics/evm.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.8]{pics/appollo11.jpg}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------
+\begin{frame}{}
+
+\begin{block}{}
+What is common to all these?
+\end{block}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{block}{}
+0 1 1 0 1 1 0 1 1 0 1 1 0 0 0 1 1 0 ...
+\end{block}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{A lot of code ...}
+
+\begin{itemize}
+\item Cardiac Pacemaker: 80,000 lines of code
+\item MRI Scanner: 70 lakh lines
+\item Boeing 787 dreamliner: 70 lakh lines
+\item Ford GT(Car): 100 lakh lines
+\item Light bulb: ??
+\item Door lock: ??
+\item Oven: ??
+\end{itemize}
+
+Ref: http://www.informationisbeautiful.net/visualizations/million-lines-of-code/
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.2]{pics/margaret-hamilton-appollo11.jpg}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{With code comes bugs ...}
+
+\begin{figure}
+\includegraphics[scale=0.3]{pics/bug.jpg}
+\end{figure}
+
+Code bugs can kill ... and create havoc!
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.6]{pics/ritchie.jpg}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.8]{pics/kr.jpg}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{block}{}
+What comes to your mind when you think of C?
+\end{block}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.18]{pics/speed.jpg}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.3]{pics/urumi.jpg}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{C Evil Spirits}
+
+\begin{itemize}
+\item Buffer overflow / off-by-one errors
+\item Null dereferencing
+\item Use-after-free
+\item Memory leaks
+\item Dangling Pointers
+\item Undefined Behaviours 
+\end{itemize}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{C Evil Spirits}
+
+"The second big thing each student should learn is: How can I avoid being 
+burned by Cs numerous and severe shortcomings? This is a development 
+environment where only the paranoid can survive"
+
+John Regehr --- http://blog.regehr.org/archives/1393
+
+\end{frame}
+%---------------------------------
+\begin{frame}{The Promise of Rust}
+
+\begin{itemize}
+
+\item Guaranteed Memory SAFETY without using
+      Garbage Collection
+
+\item As fast as C/C++
+\item Can write OS kernels, embedded systems code
+\item High level abstractions like algebraic data
+      types / pattern matching with very little 
+      performance overhead
+\item Minimal run-time
+\item Easy interfacing with C
+\item Threads without data races
+
+\end{itemize}
+
+Ref: https://www.rust-lang.org/
+
+\end{frame}
+%----------------------------------
+\begin{frame}{The Promise of Rust}
+
+\begin{itemize}
+
+\item Graydon Hoare started working on Rust in 2006
+
+\item Mozilla  became interested - idea was to use it
+in the experimental Servo browser engine project
+
+\item Rust becomes an official Mozilla project
+
+\item Several major design changes before hitting v1.0 in
+May 2015. Language stabilizes
+
+\item Regular six week release cycle
+
+\end{itemize}
+
+\end{frame}
+%----------------------------------
+\begin{frame}{Installation}
+
+\begin{itemize}
+
+\item Download from https://www.rust-lang.org/en-US/downloads.html
+
+\item Untar and add folders containing "rustc" and "cargo" to the PATH
+
+\end{itemize}
+
+Or, you can just run:
+
+curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
+\end{frame}
+%----------------------------------
+\begin{frame}{Documentation}
+
+\begin{itemize}
+
+\item Official "book": https://doc.rust-lang.org/book/
+
+\item New version of the book (work-in-progress): http://rust-lang.github.io/book/
+
+\item Rust By Example: http://rustbyexample.com/
+
+\item O'Reilly book: http://shop.oreilly.com/product/0636920040385.do
+
+\end{itemize}
+
+\end{frame}
+
+%----------------------------------
+\begin{frame}{Who is using it?}
+
+Remember, Rust is just a 1 year old baby!
+
+\begin{itemize} 
+
+\item Organizations running Rust in 
+      Production: https://www.rust-lang.org/en-US/friends.html
+
+\item Mozilla, for the Servo project. 
+
+\item Dropbox story: http://www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire/
+
+\item Coursera is using Rust: https://building.coursera.org/blog/2016/07/07/rust-docker-in-production-coursera/
+
+
+\end{itemize}
+
+\end{frame}
+
+%----------------------------------
+\begin{frame}{Interesting Projects}
+
+
+\begin{itemize} 
+
+\item Servo: the secure, parallel browser engine from Mozilla:https://servo.org/
+
+\item Redox OS: Unix-like microkernel OS written in Rust: https://www.redox-os.org/
+
+\item Tock  OS: an embedded OS for microcontrollers written in Rust: http://www.tockos.org/about/
+
+
+\end{itemize}
+
+\end{frame}
+
+%----------------------------------
+\begin{frame}{}
+
+Rust, the most loved programming language (stackoverflow
+devloper survey, 2016): 
+http://stackoverflow.com/research/developer-survey-2016
+
+\begin{figure}
+\includegraphics[scale=0.2]{pics/love.png}
+\end{figure}
+
+\end{frame}
+%---------------------------------
+\begin{frame}{About this workshop}
+
+This workshop is divided into 3 parts:
+
+\begin{itemize}
+
+\item Simple 
+
+\item Cool  
+
+\item Hard (and Cool!)
+
+\end{itemize}
+
+\end{frame}
+%-------------------------------
+\begin{frame}{The Simple parts}
+
+\begin{itemize}
+
+\item We will quickly look at: variables, control structures,
+      function basics, basic types etc.
+
+\item A demo of my first Rust project - a Raspberry Pi
+      GPIO library (ported from Python)
+
+\end{itemize}
+
+\end{frame}
+
+%-------------------------------
+\begin{frame}{The Cool parts}
+
+\begin{itemize}
+
+\item Algebraic Data types
+
+\item Pattern Matching
+
+\item Generics and Traits
+
+\item Iterators
+
+\item Closures
+
+\item Cargo
+      
+\end{itemize}
+
+and some other things ...
+
+\end{frame}
+%-------------------------------
+
+\begin{frame}{The Hard(and Cool) Parts}
+
+This is the *core* of Rust - where the real innovation
+comes in.
+
+\begin{itemize}
+
+\item Systems programming basics - understanding buffer overflows,
+      use-after-free, memory leaks, dangling pointers etc.
+
+\item Ownership and move semantics
+
+\item Borrowing
+
+\item Lifetimes
+
+\item Unsafe Rust
+
+      
+\end{itemize}
+
+\end{frame}
+%-------------------------------
+
+\begin{frame}{}
+
+Let's dive into code!
+
+\end{frame}
+%-------------------------------
+\begin{frame}{}
+
+\begin{figure}
+\includegraphics[scale=0.05]{pics/paper/paper1b.jpg}
+\end{figure}
+
+\end{frame}
+
+\end{document}
+
