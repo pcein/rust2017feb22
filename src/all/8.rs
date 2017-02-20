@@ -39,5 +39,5 @@ fn main() {
  
     println!("\nAll tests passed!!\n");
    
-    //submit::submit(Question(8), Score(10));
+    //submit::submit(Question(8), Score(15));
 }

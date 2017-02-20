@@ -11,6 +11,11 @@ quiz 6 -  example 17
 
 quiz 7 - examples 18 to 21
 
+quiz 8 - example 22
+
+quiz 9 - example 23 to 27
+
+quiz 10 - 
 
 
 
