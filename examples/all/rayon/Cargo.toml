@@ -1,0 +1,9 @@
+[package]
+name = "rayon"
+version = "0.1.0"
+authors = ["Pramode <mail@pramode.in>"]
+
+[dependencies]
+
+rayon = "0.6.0"
+
