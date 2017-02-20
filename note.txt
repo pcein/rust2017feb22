@@ -29,4 +29,7 @@ quiz 16 - examples 40 to 42
 
 quiz 17 - examples 43 to 49
 
+quiz 18 - examples 50 to 61
+
+quiz 19 (prime check) - all/any
 

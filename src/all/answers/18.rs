@@ -14,18 +14,18 @@ use submit::{Question, Score};
 /*--------------------------------------------*/
 
 /* Make this program compile and run by adding a
- * single { and a single } to the function below.
+ * single "{" and a single "}" to the function below.
  * No other change is allowed.
  */
 
 fn foo() -> i32 {
-    let mut x = 5;
+    let mut v = vec![6,7,8];
+    
+    let p1 = &mut v;
 
-    let y = &mut x;
+    let p2 = &v;
 
-    let z = &x;
-
-    *z + 1
+    p2[0]
 }
 
 fn main() {

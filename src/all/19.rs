@@ -13,26 +13,20 @@ use submit::{Question, Score};
 
 /*--------------------------------------------*/
 
-/* Make this program compile and run by removing
- * exactly two characters from the function below.
- */
-
-fn foo() -> i32 {
-    let p: &i32;
-    
-    {
-        let x = 5;
-        p = &x;
-    }
-    
-    *p
+fn is_prime(n: i32) -> bool {
+    /* add code here */
 }
 
 fn main() {
 
-    assert_eq!(foo(), 5);
+    assert_eq!(is_prime(3), true);
+    assert_eq!(is_prime(7), true);
+    assert_eq!(is_prime(8), false);
+    assert_eq!(is_prime(11), true);
+    assert_eq!(is_prime(100003), true);
+
 
     println!("\nAll tests passed!!\n");
    
-    //submit::submit(Question(19), Score(2));
+    //submit::submit(Question(20), Score(15));
 }
