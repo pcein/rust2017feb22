@@ -7,4 +7,5 @@ then
 else
     rm main.rs
     ln -s all/$1.rs main.rs
+    touch main.rs
 fi
